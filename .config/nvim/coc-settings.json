@@ -1,0 +1,15 @@
+{
+	"npm.binPath": "pnpm",
+  "tsserver.useLocalTsdk": true,
+  "explorer.mouseMode": "doubleclick",
+  "explorer.git.enable": true,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.file.reveal.auto": true,
+  "explorer.file.column.indent.chars": " ",
+  "explorer.width": 30,
+  "suggest.noselect": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+}
