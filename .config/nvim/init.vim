@@ -81,6 +81,8 @@ nmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <space>e <Cmd>CocCommand explorer<CR>
 nmap <leader>rn <Plug>(coc-rename)
 
+" fix "indentLine disable quotes in Json file"
+let g:vim_json_conceal=0
 
 " Theme config
 
@@ -95,7 +97,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'voldikss/vim-floaterm'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'folke/todo-comments.nvim'
-Plug 'Yggdroot/indentLine'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'shaunsingh/nord.nvim'
 Plug 'vim-airline/vim-airline-themes'
@@ -122,11 +123,11 @@ endfunc
 
 hi CocUnusedHighlight guifg=#EBCB8B
 
-" Todo
-hi TodoBgFIX guibg=#BF616A guifg=#D8DEE9 gui=BOLD
-hi TodoBgTODO guibg=#D08770 guifg=#3B4252 gui=BOLD
-hi TodoBgHACK guibg=#A3BE8C guifg=#3B4252 gui=BOLD
-hi TodoBgWARN guibg=#EBCB8B guifg=#2E3440 gui=BOLD
+" todo
+hi todobgfix guibg=#bf616a guifg=#d8dee9 gui=bold
+hi todobgtodo guibg=#d08770 guifg=#3b4252 gui=bold
+hi todobghack guibg=#a3be8c guifg=#3b4252 gui=bold
+hi todobgwarn guibg=#ebcb8b guifg=#2e3440 gui=bold
 
 lua << EOF
   require("todo-comments").setup {
@@ -135,4 +136,5 @@ lua << EOF
     -- refer to the configuration section below
   }
 EOF
+
 

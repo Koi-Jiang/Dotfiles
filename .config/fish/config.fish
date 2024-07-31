@@ -6,3 +6,7 @@ set -gx PATH $PATH /home/emily/.local/bin
 fnm env --use-on-cd | source
 thefuck --alias | source
 set -gx GPG_TTY (tty)
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
