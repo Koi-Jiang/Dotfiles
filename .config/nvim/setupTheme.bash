@@ -1,0 +1,2 @@
+rm ~/.local/share/nvim/plugged/vim-airline-themes/autoload/airline/themes/nord_minimal.vim
+ln -s ~/.config/nvim/nord_minimal.vim ~/.local/share/nvim/plugged/vim-airline-themes/autoload/airline/themes/nord_minimal.vim

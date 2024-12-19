@@ -33,28 +33,66 @@ let s:cterm0D = 12
 let s:cterm0E = 134
 let s:cterm0F = 12
 
-let s:N1   = [ s:gui09, s:gui02, s:cterm09, s:cterm02 ]
-let s:N2   = [ s:gui09, s:gui02, s:cterm09, s:cterm02 ]
-let s:N3   = [ s:gui09, s:gui02, s:cterm09, s:cterm02 ]
-let g:airline#themes#nord_minimal#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
+let s:Warning = [ s:gui03, s:gui0D, s:cterm09, s:cterm02 ]
+let s:Error = [ s:gui06, s:gui0B, s:cterm09, s:cterm02 ]
 
-let s:I1   = [ s:gui06, s:gui0C, s:cterm09, s:cterm02 ]
-let s:I2   = [ s:gui09, s:gui02, s:cterm09, s:cterm02 ]
-let s:I3   = [ s:gui09, s:gui02, s:cterm09, s:cterm02 ]
-let g:airline#themes#nord_minimal#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
+let s:Normal = [ s:gui09, s:gui02, s:cterm09, s:cterm02 ]
 
-let s:R1   = [ s:gui06, s:gui0B, s:cterm09, s:cterm02 ]
-let s:R2   = [ s:gui09, s:gui02, s:cterm09, s:cterm02 ]
-let s:R3   = [ s:gui09, s:gui02, s:cterm09, s:cterm02 ]
-let g:airline#themes#nord_minimal#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
+let g:airline#themes#nord_minimal#palette.normal = {
+	\ 'airline_a': s:Normal,
+	\ 'airline_b': s:Normal,
+	\ 'airline_c': s:Normal,
+	\ 'airline_x': s:Normal,
+	\ 'airline_y': s:Normal,
+	\ 'airline_z': s:Normal,
+	\ 'airline_warning': s:Warning,
+	\ 'airline_error': s:Error
+\ }
 
-let s:V1   = [ s:gui06, s:gui0F, s:cterm09, s:cterm02 ]
-let s:V2   = [ s:gui09, s:gui02, s:cterm09, s:cterm02 ]
-let s:V3   = [ s:gui09, s:gui02, s:cterm09, s:cterm02 ]
-let g:airline#themes#nord_minimal#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
+let s:Insert   = [ s:gui06, s:gui0C, s:cterm09, s:cterm02 ]
+let g:airline#themes#nord_minimal#palette.insert = {
+	\ 'airline_a': s:Insert,
+	\ 'airline_b': s:Normal,
+	\ 'airline_c': s:Normal,
+	\ 'airline_x': s:Normal,
+	\ 'airline_y': s:Normal,
+	\ 'airline_z': s:Normal,
+	\ 'airline_warning': s:Warning,
+	\ 'airline_error': s:Error
+\ }
 
-let s:IA1   = [ s:gui09, s:gui02, s:cterm09, s:cterm02 ]
-let s:IA2   = [ s:gui09, s:gui02, s:cterm09, s:cterm02 ]
-let s:IA3   = [ s:gui09, s:gui02, s:cterm09, s:cterm02 ]
-let g:airline#themes#nord_minimal#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
+let s:Replace   = [ s:gui06, s:gui0B, s:cterm09, s:cterm02 ]
+let g:airline#themes#nord_minimal#palette.replace = {
+	\ 'airline_a': s:Replace,
+	\ 'airline_b': s:Normal,
+	\ 'airline_c': s:Normal,
+	\ 'airline_x': s:Normal,
+	\ 'airline_y': s:Normal,
+	\ 'airline_z': s:Normal,
+	\ 'airline_warning': s:Warning,
+	\ 'airline_error': s:Error
+\ }
+
+let s:Visual   = [ s:gui06, s:gui0F, s:cterm09, s:cterm02 ]
+let g:airline#themes#nord_minimal#palette.visual = {
+	\ 'airline_a': s:Visual,
+	\ 'airline_b': s:Normal,
+	\ 'airline_c': s:Normal,
+	\ 'airline_x': s:Normal,
+	\ 'airline_y': s:Normal,
+	\ 'airline_z': s:Normal,
+	\ 'airline_warning': s:Warning,
+	\ 'airline_error': s:Error
+\ }
+
+let g:airline#themes#nord_minimal#palette.inactive = {
+	\ 'airline_a': s:Normal,
+	\ 'airline_b': s:Normal,
+	\ 'airline_c': s:Normal,
+	\ 'airline_x': s:Normal,
+	\ 'airline_y': s:Normal,
+	\ 'airline_z': s:Normal,
+	\ 'airline_warning': s:Warning,
+	\ 'airline_error': s:Error
+\ }
 
