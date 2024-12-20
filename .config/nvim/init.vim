@@ -37,6 +37,9 @@ let g:camelsnek_no_fun_allowed = 0
 " disable coc when start vim (not use coc for now)
 let g:coc_start_at_startup = v:false
 
+" fix "IndentLine disabled quotes in Json file" problem  
+let g:vim_json_conceal=0
+
 "" ======================================================================
 "" Plugins
 "" ======================================================================

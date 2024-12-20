@@ -8,7 +8,8 @@
     "coc-emmet": ">=1.1.6",
     "coc-css": ">=2.1.0",
     "coc-prettier": ">=9.3.2",
-    "coc-explorer": ">=0.26.6"
+    "coc-explorer": ">=0.26.6",  
+    "@yaegassy/coc-tailwindcss3": ">=0.5.5"
   },
   "lastUpdate": 1721703234303
 }
